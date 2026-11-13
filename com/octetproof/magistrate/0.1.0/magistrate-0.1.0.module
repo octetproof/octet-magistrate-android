@@ -1,0 +1,157 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.octetproof",
+    "module": "magistrate",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.octetproof",
+          "module": "sdk",
+          "version": {
+            "requires": "3.1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "magistrate-0.1.0.aar",
+          "url": "magistrate-0.1.0.aar",
+          "size": 1668533,
+          "sha512": "7833acb112116abaf49904501d71549800dd41b5f5fc807b799e86d7cf3553d7ae46f60f28f6004da3489c85d66f00bc69631ae7875bb9a414ee2fc62e974dda",
+          "sha256": "d8f9baccc85023006a596974a2f63b5b9833f2abbd8d19435ce19d115498deee",
+          "sha1": "15b6cf9cbaeaa5c2ab1060226b2042f5faa5a7fa",
+          "md5": "530c30ab6a252c5351f0f765e9a55ef8"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna",
+          "version": {
+            "requires": "5.14.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "jna",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "androidx.security",
+          "module": "security-crypto",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.jspecify",
+              "module": "jspecify"
+            }
+          ]
+        },
+        {
+          "group": "com.octetproof",
+          "module": "sdk",
+          "version": {
+            "requires": "3.1.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "magistrate-0.1.0.aar",
+          "url": "magistrate-0.1.0.aar",
+          "size": 1668533,
+          "sha512": "7833acb112116abaf49904501d71549800dd41b5f5fc807b799e86d7cf3553d7ae46f60f28f6004da3489c85d66f00bc69631ae7875bb9a414ee2fc62e974dda",
+          "sha256": "d8f9baccc85023006a596974a2f63b5b9833f2abbd8d19435ce19d115498deee",
+          "sha1": "15b6cf9cbaeaa5c2ab1060226b2042f5faa5a7fa",
+          "md5": "530c30ab6a252c5351f0f765e9a55ef8"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "magistrate-0.1.0-sources.jar",
+          "url": "magistrate-0.1.0-sources.jar",
+          "size": 29444,
+          "sha512": "689110c733b5ce05885dc77c70a7c6569fe78b8d6ae3ace12134076de0702d78cc0d0551c431032f228d41f36187fff9f6eaa4e2bb760a92a3ff7532718bf37a",
+          "sha256": "85f98500b15f1c510a14c4650098fa8b31f5d3d1e04d2ab5414e7dcf2b69a17f",
+          "sha1": "d99ac25abfcc7b83ed77e5dc69063d5f2319bf60",
+          "md5": "5a46932aa192759bb79c0ace740c3ad5"
+        }
+      ]
+    }
+  ]
+}
